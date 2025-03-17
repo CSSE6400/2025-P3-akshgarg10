@@ -18,5 +18,5 @@ RUN pipx run poetry install --no-root
 COPY todo todo
 
 # Running our application 
-CMD ["bash", "-c", "sleep 30 && pipx run poetry run flask --app todo run \ 
+CMD ["bash", "-c", "sleep 10 && pipx run poetry run flask --app todo run \ 
    --host 0.0.0.0 --port 6400"]
